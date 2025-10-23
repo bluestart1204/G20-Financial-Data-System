@@ -397,9 +397,43 @@ Stars:             ⭐ (your star matters!)
 
 ---
 
+## 🆕 NEW: Gold Price Prediction Model V7.0
+
+We've added a comprehensive **Gold Price Factor Analysis System** that analyzes factor contributions to gold prices from 2000-2023.
+
+### Features:
+- ✅ **Year-by-year analysis** (2000-2023)
+- ✅ **7 core factors** with optimized weights
+- ✅ **5-layer analysis framework** (raw data → contribution)
+- ✅ **Trigger mechanism** for extreme events
+- ✅ **Automated reporting** (CSV + Excel)
+
+### Quick Start:
+
+```bash
+# Run complete analysis for all years
+python analyze_factors.py
+
+# Run demo for 2023
+python demo_2023_analysis.py
+
+# Run tests
+python test_model.py
+```
+
+### Output Files:
+- `reports/year_YYYY_contributions.csv` - Individual year reports
+- `reports/factor_contribution_2000_2023.xlsx` - Complete summary
+- `reports/trigger_analysis_2000_2023.xlsx` - Trigger analysis
+
+📖 **[Full Documentation](FACTOR_ANALYSIS_README.md)** | **[Implementation Details](IMPLEMENTATION_SUMMARY.md)**
+
+---
+
 ## 🗺️ Roadmap
 
 ### Version 1.1 (Q1 2025)
+- [x] Gold price prediction model V7.0 ✅
 - [ ] Add real-time data update automation
 - [ ] Expand to G30 countries
 - [ ] Interactive web dashboard
@@ -408,7 +442,7 @@ Stars:             ⭐ (your star matters!)
 ### Version 2.0 (Q2 2025)
 - [ ] Daily frequency for key indicators
 - [ ] Sentiment analysis from central bank communications
-- [ ] Machine learning prediction models
+- [ ] Enhanced machine learning prediction models
 - [ ] Multi-language support (EN, CN, JP, ES)
 
 ---

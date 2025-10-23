@@ -203,6 +203,41 @@ G20央行总资产: $29.5万亿 (2024)
 
 ---
 
+---
+
+## 🆕 最新功能：黄金价格预测模型 V7.0
+
+新增**黄金价格因子分析系统**，对2000-2023年的黄金价格因子贡献进行深度分析。
+
+### 功能特点：
+- ✅ **逐年分析** (2000-2023)
+- ✅ **7个核心因子**，优化权重
+- ✅ **五层分析框架**（原始数据→最终贡献）
+- ✅ **触发器机制**，应对极端事件
+- ✅ **自动报告生成** (CSV + Excel)
+
+### 快速开始：
+
+```bash
+# 运行完整分析（所有年份）
+python analyze_factors.py
+
+# 运行2023年演示
+python demo_2023_analysis.py
+
+# 运行测试
+python test_model.py
+```
+
+### 输出文件：
+- `reports/year_YYYY_contributions.csv` - 单独年份报告
+- `reports/factor_contribution_2000_2023.xlsx` - 完整汇总
+- `reports/trigger_analysis_2000_2023.xlsx` - 触发器分析
+
+📖 **[完整文档](FACTOR_ANALYSIS_README.md)** | **[实现细节](IMPLEMENTATION_SUMMARY.md)**
+
+---
+
 ## 📖 文档
 
 - 📘 [数据字典](docs/data_dictionary.md) - 变量定义和来源
