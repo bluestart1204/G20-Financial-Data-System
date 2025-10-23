@@ -80,6 +80,9 @@ docs/_templates/
 htmlcov/
 .tox/
 
+# Matplotlib
+.matplotlib/
+
 # Distribution / packaging
 .Python
 build/
