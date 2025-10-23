@@ -400,8 +400,8 @@ def create_gold_price_visualization():
     # 1. 下载金价数据
     gold_data = download_gold_data('2000-01-01', '2024-01-01')
     
-    # 2. 创建画布
-    fig, ax = plt.subplots(figsize=(24, 14))
+    # 2. 创建画布 (24x14 inches as specified)
+    fig, ax = plt.subplots(figsize=(24, 14), dpi=100)
     
     # 3. 绘制主曲线（周度金价）
     ax.plot(gold_data.index, gold_data['Close'], 
@@ -441,7 +441,9 @@ def create_gold_price_visualization():
     # 7. 保存图表
     output_path = 'reports/gold_price_complete_visualization.png'
     print(f"\n保存图表到: {output_path}")
-    plt.savefig(output_path, dpi=300, bbox_inches='tight', facecolor='white')
+    # Adjust layout to fit everything properly
+    plt.tight_layout()
+    plt.savefig(output_path, dpi=300, facecolor='white')
     print("✅ 图表保存成功!")
     
     # 8. 保存年度数据摘要
