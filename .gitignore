@@ -63,6 +63,9 @@ Thumbs.db
 output/temp/
 *.log
 
+# Model V7 Results (generated files)
+results/
+
 # API Keys (IMPORTANT!)
 config/secrets.py
 config/api_keys.py
